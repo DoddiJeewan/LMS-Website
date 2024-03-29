@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="UpdatedAssignment.Site1" %>
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Talent LMS</title>
+    <link href="css/external.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header id="header">
+
+            <nav id="nav">
+                <div>
+                    <a href="Default.aspx" id="hlLogo">
+                        <img src="images/Logo.png" href="Default.aspx" class="logo" alt="Logo" id="img_Logo"/>
+                    </a>
+                </div>
+
+                <ul>
+                    <li><a href="Default.aspx" id="hlDefaultPage">Home</a></li>
+                    <li><a href="About Us.aspx" id="hlAboutUsPage">About Us</a></li>
+                    <li><a href="Instructors.aspx" id="hlInstructorsPage">Instructors</a></li>
+                    <li><a href="Students.aspx" id="hlStudentsPage">Students</a></li>
+                    <li><a href="Contact.aspx" id="hlContactPage">Contact</a></li>
+                    <li><a href="Admin.aspx" id="hlAdminPage">Admin</a></li>
+                    <li><a href="Login.aspx" id="hlLoginPage">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <aside id="side">
+                <h2>Click Image For Books</h2>
+                <a href="https://bookoutlet.com" id="Advertizement">
+                    <img src="images/Booksadd.png" id="imgAddImage" alt="Advertizement"/></a>
+
+            </aside>
+        </div>
+
+        <div id="con" class="auto-style1">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+
+
+</body>
+
+</html>
